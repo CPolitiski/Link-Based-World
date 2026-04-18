@@ -1,0 +1,261 @@
+{
+    "Title": "The Milk Parable",
+    "CreditsA": "The End",
+    "InitialLocation": "House",
+    "Locations": {
+        "House": {
+            "Body": "The day has just started yet to you it feels ruined already. You find a piece of paper written by your mother telling you to go out and buy milk for the house. *Sigh* (Thats sooooooo much work... AND I HAVE TO PAY FOR IT???) you think to yourself. ... Well time to do something I suppose.",
+            "Choices": [
+                {
+                    "Text": "Leave The House",
+                    "Target": "Outside"
+                },
+                {
+                    "Text": "Go Back To Your Room",
+                    "Target": "Bedroom"
+                }
+            ]
+        },
+        "House2": {
+            "Body": "It hits you as you open the front door (Oh... I was supposed to get milk...) but those thoughts come too late, you are already home, you already spent the money, and now all thats left is to face the consequences",
+            "Choices": [
+                {
+                    "Text": "Face The Consequences",
+                    "Target": "Bad End2"
+                }
+            ]
+        },
+        "Bedroom": {
+            "Body": "Your nice and... big enough bedroom... In the corner of your room, the comfy bed speaks to you in ways that you never thought possible.",
+            "Choices": [
+                {
+                    "Text": "Leave Your Room",
+                    "Target": "House"
+                },
+                {
+                    "Text": "Go Back To Sleep",
+                    "Target": "Sleep"
+                },
+                {
+                    "Text": "Search Your Nightstand",
+                    "Target": "Drawer"
+                }
+            ]
+        },
+        "Outside": {
+            "Body": "The summer sun beats down on you (WHY IS IT SO HOT!!!) these thoughts fill your mind as you ponder your next course of action.",
+            "Choices": [
+                {
+                    "Text": "Go To The Shopping Center",
+                    "Target": "Shopping Center"
+                },
+                {
+                    "Text": "Go To The Park",
+                    "Target": "Park"
+                },
+                {
+                    "Text": "Go Back Home",
+                    "Target": "House"
+                }
+            ]
+        },
+        "Park": {
+            "Body": "A park full of whimsy and fun! Maybe you're a tad bit too old to play here now... but theres still fun to be had!",
+            "Choices": [
+                {
+                    "Text": "Go Back",
+                    "Target": "Outside"
+                },
+                {
+                    "Text": "Look Around",
+                    "Target": "Park2"
+                }
+            ]
+        },
+        "Park2": {
+            "Body": ". . .? Theres a phone on the ground... and its unlocked?",
+            "Body2": "Well that was fun",
+            "GivesItem": "Phone",
+            "Choices": [
+                {
+                    "Text": "Prank Call A Random Number",
+                    "Target": "Phone Call"
+                },
+                {
+                    "Text": "Leave It Alone",
+                    "Target": "Park"
+                }
+            ],
+            "Choices2": [
+                {
+                    "Text": "Go Back",
+                    "Target": "Park"
+                }
+            ]
+        },
+        "Phone Call":{
+            "Body": "*ring* *ring* *click* 'Hello? Who is this?",
+            "Choices": [
+                {
+                    "Text": "First Name Joe, Last Name Mama",
+                    "Target": "Prank1"
+                },
+                {
+                    "Text": "Is Your Refrigerator Running?",
+                    "Target": "Prank2"
+                },
+                {
+                    "Text": "SIX SEVEN SKIBIDI TOILETS ON THE WALL SIX SEVEN SKIBIDI TOILETSSS!",
+                    "Target": "Prank3"
+                }
+            ]
+        },
+        "Prank1":{
+            "Body": "'What so your name is Joe Mama?' ... ... 'How did I- ... That's so d- ... ... I'm hanging up...' *click*",
+            "Choices": [
+                {
+                    "Text": "End Call",
+                    "Target": "Park2"
+                }
+            ]
+        },
+        "Prank2":{
+            "Body": "'Why yes! it is indeed! WHAT A MINUTE NO NO NO' *click*",
+            "Choices": [
+                {
+                    "Text": "End Call",
+                    "Target": "Park2"
+                }
+            ]
+        },
+        "Prank3":{
+            "Body": "'OH MY GOD WHY WOULD YOU EVEN SAY THAT DO YOU EVEN UNDERSTAND HOW COMPLETELY UNFUNNY THAT WAS THIS IS WHY I BEAT KIDS EVERYDAY AND-' The person on the other line continues, but you blocked them out",
+            "Choices": [
+                {
+                    "Text": "End Call",
+                    "Target": "Park2"
+                }
+            ]
+        },
+        "Shopping Center": {
+            "Body": "A place for shopping or something",
+            "Choices": [
+                {
+                    "Text": "Go To Milk",
+                    "Target": "Milk Store"
+                },
+                {
+                    "Text": "Go To The Arcade",
+                    "Target": "Arcade"
+                },
+                {
+                    "Text": "Go Back",
+                    "Target": "Outside"
+                }
+            ]
+        },
+        "Milk Store": {
+            "RequiresItem": "Money",
+            "Body": "Ahhh Milk famous for it's milk aisle! Wait you don't have any money.... There should be some in your room",
+            "Body2": "Ahhh Milk famous for it's milk aisle!",
+            "Choices": [
+                {
+                    "Text": "Leave",
+                    "Target": "Shopping Center"
+                }
+            ],
+            "Choices2": [
+                {
+                    "Text": "Leave",
+                    "Target": "Shopping Center"
+                },
+                {
+                    "Text": "Buy Milk",
+                    "Target": "Buy Milk"
+                }
+            ]
+        },
+        "Arcade": {
+            "RequiresItem": "Money",
+            "Body": "Oh Yeah!!! The real place of fun! Only requires you to spend all your money!!",
+            "Body2": "Oh Yeah!!! The real place of fun! Only requires you to spend all your money!!",
+            "Choices": [
+                {
+                    "Text": "Play",
+                    "Target": "No Play"
+                },
+                {
+                    "Text": "Leave",
+                    "Target": "Shopping Center"
+                }
+            ],
+            "Choices2": [
+                {
+                    "Text": "Play",
+                    "Target": "Play"
+                },
+                {
+                    "Text": "Leave",
+                    "Target": "Shopping Center"
+                }
+            ]
+        },
+        "Buy Milk": {
+            "GivesItem": "Milk",
+            "Body": "Boom mission accomplished!",
+            "Choices": [
+                {
+                    "Text": "Return Back Home",
+                    "Target": "Good End"
+                }
+            ]
+        },
+        "No Play": {
+            "Body": "But you don't have any money...",
+            "Choices": [
+                {
+                    "Text": ".  .  .",
+                    "Target": "Arcade"
+                }
+            ]
+        },
+        "Play": {
+            "Body": "YES THIS IS AWESOME!!!!!!! (and a great use of money!) The time passes and you forget why you were even outside in the first place",
+            "Choices": [
+                {
+                    "Text": "Return Home",
+                    "Target": "House2"
+                }
+            ]
+        },
+        "Drawer": {
+            "Body": "You search your nightstand and find . . . . !? JACKPOT!!!!! (you found $5)",
+            "Body2": "Did you think there would be more?",
+            "GivesItem": "Money",
+            "Choices": [
+                {
+                    "Text": "Go Back",
+                    "Target": "Bedroom"
+                }
+            ]
+        },
+        "Sleep": {
+            "Body": "Yeah getting the milk is a later problem... Surely you'll be able to wake up before your mom gets home right? ...No use thinking about it! Thats then, this is now.",
+            "Choices": [
+                {
+                    "Text": "Wake Up",
+                    "Target": "Bad End"
+                }
+            ]
+        },
+        "Good End": {
+            "Body": "You put the milk away in the fridge and congratulate yourself on a job well done          (Ending 1: Normal Ending)"
+        },
+        "Bad End": {
+            "Body": "Your mother came home and was furious! Maybe you should've just done as she asked...           (Ending 3: Sleep Ending)"
+        },
+        "Bad End2": {
+            "Body": "Your mother deemed you useless and decided to kick you out the house... Now you are homeless and without any milk... (STILL WORTH IT!!!)     (Ending 2: No Regrets)"
+        }
+    }
+}
